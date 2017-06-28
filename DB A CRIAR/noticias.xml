@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 3.3.9
+- http://www.phpmyadmin.net
+-
+- Servidor: localhost
+- Tempo de Geração: Jun 26, 2017 as 05:23 PM
+- Versão do Servidor: 5.1.53
+- Versão do PHP: 5.3.4
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="tutsup" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="noticias">
+                CREATE TABLE `noticias` (
+                  `noticia_id` int(11) NOT NULL AUTO_INCREMENT,
+                  `noticia_data` datetime DEFAULT '0000-00-00 00:00:00',
+                  `noticia_autor` varchar(255) DEFAULT NULL,
+                  `noticia_titulo` varchar(255) DEFAULT NULL,
+                  `noticia_texto` text,
+                  `noticia_imagem` varchar(255) DEFAULT NULL,
+                  PRIMARY KEY (`noticia_id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Banco de Dados: 'tutsup'
+    -->
+    <database name="tutsup">
+        <!-- Tabela noticias -->
+        <table name="noticias">
+            <column name="noticia_id">1</column>
+            <column name="noticia_data">2017-06-22 00:00:00</column>
+            <column name="noticia_autor">Admin</column>
+            <column name="noticia_titulo">O que Ã© MVC ?</column>
+            <column name="noticia_texto">MVC Ã© nada mais que um padrÃ£o de arquitetura de software, separando sua aplicaÃ§Ã£o em 3 camadas. A camada de interaÃ§Ã£o do usuÃ¡rio(view), a camada de manipulaÃ§Ã£o dos dados(model) e a camada de controle(controller).</column>
+            <column name="noticia_imagem">imagemmvc1jpg_192579848.jpg</column>
+        </table>
+        <table name="noticias">
+            <column name="noticia_id">2</column>
+            <column name="noticia_data">2017-06-22 00:00:00</column>
+            <column name="noticia_autor">Admin</column>
+            <column name="noticia_titulo">As camadas do MVC</column>
+            <column name="noticia_texto">O que Ã© Model?
+Model Ã© onde fica a lÃ³gica da aplicaÃ§Ã£o. SÃ³ isso.
+
+Vai disparar um e-mail? Validar um formulÃ¡rio? Enviar ou receber dados do banco? NÃ£o importa. A model deve saber como executar as tarefas mais diversa, mas nÃ£o precisa saber quando deve ser feito, nem como mostrar estes dados.
+
+
+
+O que Ã© View?
+View exibe os dados. SÃ³ isso.
+
+View nÃ£o Ã© sÃ³ o HTML, mas qualquer tipo de retorno de dados, como PDF, Json, XML, o retorno dos dados do servidor RESTFull, os tokens de autenticaÃ§Ã£o OAuth2, entre outro. Qualquer retorno de dados para uma interface qualquer (o navegador, por exemplo) Ã© responsabilidade da view. A view deve saber renderizar os dados corretamente, mas nÃ£o precisa saber como obtÃª-los ou quando renderizÃ¡-los.
+
+
+
+O que Ã© Controller?
+O controller diz quando as coisas devem acontecer. SÃ³ isso.
+
+Ã‰ usado para intermediar a model e a _view_ de uma camada. Por exemplo, para pegar dados da model (guardados em um banco) e exibir na view (em uma pÃ¡gina HTML), ou pegar os dados de um formulÃ¡rio (view) e enviar para alguÃ©m (model). TambÃ©m Ã© responsabilidade do controller cuidar das requisiÃ§Ãµes (request e response) e isso tambÃ©m inclui os famosos middlewares (Laravel, Slim Framework, Express, Ruby on Rails, etc.). O controller nÃ£o precisa saber como obter os dados nem como exibi-los, sÃ³ quando fazer isso.</column>
+            <column name="noticia_imagem">mvcpng_382618571.png</column>
+        </table>
+        <table name="noticias">
+            <column name="noticia_id">3</column>
+            <column name="noticia_data">2017-06-23 00:00:00</column>
+            <column name="noticia_autor">Admin</column>
+            <column name="noticia_titulo">O que Ã© PDO?</column>
+            <column name="noticia_texto">Ã‰ um mÃ³dulo de PHP montado sob o paradigma Orientado a Objetos e cujo objetivo Ã© prover uma padronizaÃ§Ã£o da forma com que PHP se comunica com um banco de dados relacional. Este mÃ³dulo surgiu a partir da versÃ£o 5 de PHP. PDO, portanto, Ã© uma interface que define um conjunto de classes e a assinatura dos mÃ©todos de comunicaÃ§Ã£o com uma base de dados.</column>
+            <column name="noticia_imagem">pdopng_785743088.png</column>
+        </table>
+        <table name="noticias">
+            <column name="noticia_id">4</column>
+            <column name="noticia_data">2017-06-23 00:00:00</column>
+            <column name="noticia_autor">Admin</column>
+            <column name="noticia_titulo">Por que usar PDO?</column>
+            <column name="noticia_texto">Antes da chegada do PDO, a linguagem PHP oferecia suporte Ã  comunicaÃ§Ã£o com diferentes modelos de SGBD atravÃ©s de mÃ³dulos especÃ­ficos. A maioria deles provia uma biblioteca de funÃ§Ãµes e utilizava um resource para representar a conexÃ£o e outro para representar um resultset (o resultado de uma consulta). As operaÃ§Ãµes eram feitas sobre as variÃ¡veis de resource.
+
+Cada driver implementava suas operaÃ§Ãµes conforme imaginavam ser mais adequados. Embora alguns deles tivessem um funcionamento semelhante, a ordem dos parÃ¢metros nem sempre era a mesma e podia causar uma certa confusÃ£o entre programadores.</column>
+            <column name="noticia_imagem">pdopng_755817491.png</column>
+        </table>
+        <table name="noticias">
+            <column name="noticia_id">5</column>
+            <column name="noticia_data">2017-06-23 00:00:00</column>
+            <column name="noticia_autor">Admin</column>
+            <column name="noticia_titulo">Como conectar a um banco MySQL usando PDO</column>
+            <column name="noticia_texto">  $banco = new PDO('mysql:host=localhost;dbname=nome_do_banco', 'username','password')or print (mysql_error());
+  print &quot;ConexÃƒï¿½Ã‚Â£o Efetuada com sucesso!&quot;;
+  </column>
+            <column name="noticia_imagem">pdopng_1900546273.png</column>
+        </table>
+        <table name="noticias">
+            <column name="noticia_id">6</column>
+            <column name="noticia_data">2017-06-23 00:00:00</column>
+            <column name="noticia_autor">Admin</column>
+            <column name="noticia_titulo">Como conectar a um banco MySQL usando PDO</column>
+            <column name="noticia_texto">**Incluir dados**
+
+$banco = new PDO('mysql:host=localhost;dbname=nome_do_banco', 'username','password');
+  $novo_cliente = array('nome'=&gt;'JosÃ©','departamento'=&gt;'TI','unidade'=&gt;'Paulista');
+  $banco-&gt;prepare('INSERT INTO clientes (nome,departamento,unidade) VALUES (:nome,:departamento,:unidade)')-&gt;execute($novo_cliente);</column>
+            <column name="noticia_imagem">pdopng_985766413.png</column>
+        </table>
+        <table name="noticias">
+            <column name="noticia_id">7</column>
+            <column name="noticia_data">2017-06-23 00:00:00</column>
+            <column name="noticia_autor">Admin</column>
+            <column name="noticia_titulo">O que Ã© CRUD?</column>
+            <column name="noticia_texto">CRUD Ã© o acrÃ´nimo da expressÃ£o do idioma InglÃ«s, Create (CriaÃ§Ã£o), Retrieve (Consulta), Update (AtualizaÃ§Ã£o) e Delete (DestruiÃ§Ã£o). Este acrÃ´nimo Ã© comumente utilizado definir as quatro operaÃ§Ãµes bÃ¡sicas usadas em Banco de Dados Relacionais.
+</column>
+            <column name="noticia_imagem">image002jpg_2127023292.jpg</column>
+        </table>
+        <table name="noticias">
+            <column name="noticia_id">8</column>
+            <column name="noticia_data">2017-06-23 00:00:00</column>
+            <column name="noticia_autor">Admin</column>
+            <column name="noticia_titulo">Interface para Utilizadores</column>
+            <column name="noticia_texto">As operaÃ§Ãµes CRUD tambÃ©m sÃ£o relevantes em interfaces para utilizadores de vÃ¡rios nÃ­veis.<br/>Por exemplo, num programa de CatÃ¡logo de EndereÃ§os, uma entrada de um contacto individual pode ser considerada a unidade bÃ¡sica de persistÃªncia. As operaÃ§Ãµes mÃ­nimas para este tipo de programa sÃ£o:
+
+Create	Criar ou adicionar novas entradas
+Read (Retrieve)	Ler, recuperar ou ver entradas existentes
+Update	Atualizar ou editar entradas existentes
+Delete (Destroy)	Remover entradas existentes</column>
+            <column name="noticia_imagem">image002jpg_410787064.jpg</column>
+        </table>
+        <table name="noticias">
+            <column name="noticia_id">9</column>
+            <column name="noticia_data">2017-06-23 00:00:00</column>
+            <column name="noticia_autor">Admin</column>
+            <column name="noticia_titulo">AplicaÃ§Ã£o em Bases de Dados Relacionais</column>
+            <column name="noticia_texto">A abreviaÃ§Ã£o CRUD mapeada para o padrÃ£o ISO/SQL:
+
+Create	INSERT
+Read (Retrieve)	SELECT
+Update	UPDATE
+Delete (Destroy)DELETE
+</column>
+            <column name="noticia_imagem">image002jpg_132012028.jpg</column>
+        </table>
+    </database>
+</pma_xml_export>
